@@ -12,7 +12,7 @@ export default async function Articles() {
         {posts.map((post) => (
           <Link
             href={`/posts/${post.slug}`}
-            className="border-2 border-gray-400 rounded-sm p-1 grid grid-cols-2 hover:scale-105 hover:border-gray-100"
+            className="border-2 border-gray-400 rounded-sm p-1 grid grid-cols-2 transition hover:scale-105 hover:border-gray-100"
             key={post._id}
           >
             {post.image && (
