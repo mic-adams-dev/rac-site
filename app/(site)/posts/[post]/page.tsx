@@ -13,8 +13,10 @@ export default async function Post({ params }: Props) {
     <div className="max-w-5xl mx-auto py-10">
       <div className="flex justify-between">
         <div>
-          <h1 className="text-white font-extrabold text-5xl">{post.name}</h1>
-          <h1 className="py-5 text-red-500 font-bold text-3xl">
+          <h1 className="text-white font-extrabold text-5xl font-sans">
+            {post.name}
+          </h1>
+          <h1 className="py-5 text-red-500 font-bold text-3xl font-sans">
             {post.author}
           </h1>
         </div>
@@ -24,7 +26,7 @@ export default async function Post({ params }: Props) {
             alt={post.name}
             width={2000}
             height={2000}
-            className="max-w-lg"
+            className="md:max-w-lg md:w-auto object-scale-down w-48"
           />
         )}
       </div>
