@@ -30,7 +30,7 @@ export default async function Post({ params }: Props) {
           />
         )}
       </div>
-      <div className="py-10 text-white">
+      <div className="font-fancy py-10 text-white">
         <PortableText value={post.content} />
       </div>
     </div>
