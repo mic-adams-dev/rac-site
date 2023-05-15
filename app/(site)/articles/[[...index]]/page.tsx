@@ -6,7 +6,7 @@ export default async function Articles() {
   const posts = await getPosts();
 
   return (
-    <div className="max-w-5xl mx-auto py-10">
+    <div className="max-w-5xl mx-5 md:mx-auto py-10">
       <h1 className="text-white text-5xl font-extrabold">Articles</h1>
       <div className="mt-5 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {posts.map((post) => (

@@ -57,7 +57,7 @@ export const Navbar = () => {
                 Journal
               </Link>
               <Link
-                href="#"
+                href="/archive"
                 className="py-5 px-3 text-white hover:text-gray-300"
               >
                 Archive

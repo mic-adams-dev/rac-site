@@ -33,6 +33,11 @@ const post = {
       ],
     },
     {
+      name: "category",
+      title: "Category",
+      type: "string",
+    },
+    {
       name: "content",
       title: "Content",
       type: "array",

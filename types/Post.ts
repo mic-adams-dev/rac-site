@@ -5,6 +5,7 @@ export type Post = {
   _createdAt: string;
   name: string;
   author: string;
+  category: string;
   slug: string;
   image: string;
   url: string;
