@@ -1,17 +1,19 @@
 import { getPosts } from "@/sanity/sanity-utils";
 import Image from "next/image";
 import Link from "next/link";
+import { Post } from "@/types/Post";
 
 type Props = {
   params: { category: string };
 };
 export default async function Articles({ params }: Props) {
-  const category = params.category;
-  const posts = await getPosts(category);
+  const category: string = params.category;
+  const posts: Post[] = await getPosts(category);
+  const catTitle = category.charAt(0).toUpperCase() + category.slice(1);
 
   return (
     <div className="max-w-5xl mx-5 md:mx-auto py-10">
-      <h1 className="text-white text-5xl font-extrabold">{category}</h1>
+      <h1 className="text-white text-5xl font-extrabold">{catTitle}</h1>
       <div className="mt-5 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {posts.map((post) => (
           <Link
