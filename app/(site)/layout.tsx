@@ -16,7 +16,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link
-          href="https://fonts.googleapis.com/css2?family=Arsenal&family=Patrick+Hand+SC&display=swap"
+          href="https://fonts.googleapis.com/css2?family=PT+Mono&family=Source+Sans+Pro&display=swap"
           rel="stylesheet"
         />
       </head>
