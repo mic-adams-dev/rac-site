@@ -7,7 +7,8 @@ export default async function Archive() {
   const categories = posts
     .map((post: Post) => post.category)
     .flat()
-    .filter((category, index, self) => self.indexOf(category) === index);
+    .filter((category, index, self) =>
+      self.indexOf(category) === index);
 
   return (
     <div className="text-white">

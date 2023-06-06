@@ -16,7 +16,8 @@ export default async function Post({ params }: Props) {
           <h1 className="text-white font-extrabold text-5xl font-sans">
             {post.name}
           </h1>
-          <h1 className="py-5 text-red-500 font-bold text-3xl font-sans">
+          <h1 className="py-5
+                         text-red-500 font-bold text-3xl font-sans">
             {post.author}
           </h1>
         </div>

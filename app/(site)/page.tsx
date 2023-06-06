@@ -1,10 +1,11 @@
-import { Navbar } from "@/components/Navbar";
-
 export default function Home() {
   return (
     <div className="max-w-5xl mx-5 lg:mx-auto py-10">
-      <h1 className="text-white text-5xl font-extrabold font-sans">About</h1>
-      <div className="mt-10 grid grid-cols-1 md:grid-cols-2">
+      <h1 className="text-white text-5xl font-extrabold font-sans">
+        About
+      </h1>
+      <div className="mt-10
+                      grid grid-cols-1 md:grid-cols-2">
         <div>
           <h1 className="text-red-500 text-3xl font-bold font-sans">
             Who we are
